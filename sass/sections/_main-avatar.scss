@@ -1,0 +1,45 @@
+
+.avatar {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+.avatar__wrapper-img {
+    border-radius: 36% 64% 54% 46% / 57% 29% 71% 43% ;
+    overflow: hidden;
+    position:relative ;
+    z-index: 3;
+    width: 280px;
+    height: 371px;
+
+    @media (max-width:899px){
+        width:200px ;
+        height:286px ;
+    }
+
+}
+.avatar__shadow {
+    width: 374px;
+    height: 371px;
+    position:absolute ;
+    border-radius: 36% 64% 54% 46% / 57% 29% 71% 43% ;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media (max-width:899px){
+        width:200px ;
+        height:286px ;
+    }
+    
+}
+.avatar__shadow--first {
+    background-color: rgba(13, 184, 194, 0.60);
+    transform: rotate(-30.58deg);
+    z-index: 2;
+}
+.avatar__shadow--second {
+    background-color: rgba(240, 227, 202, 0.60);
+    transform: rotate(24.12deg);
+    z-index: 1;
+}

@@ -1,0 +1,47 @@
+.about-me{
+padding-top: 64px ;
+padding-bottom: 64px ;
+}
+
+.about-me__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap:32px ;
+
+    
+    @media (max-width:899px){
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+    
+
+}
+.about-me__img {
+width: 101px;
+height: 101px;
+}
+
+.about-me__text {
+width: 904px;
+font-family: 'Inconsolata';
+font-weight: 400;
+font-size: 24px;
+line-height: 1.04;
+
+
+@media (max-width:1244px){
+    width: 455px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.16;
+}
+
+@media (max-width:899px){
+    width: 322px;
+    
+}
+
+
+}

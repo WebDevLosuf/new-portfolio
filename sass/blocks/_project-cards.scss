@@ -1,0 +1,78 @@
+.row-roject-cards {
+    display: flex;
+    column-gap: 16px ;
+    justify-content: center;
+
+
+    @media (max-width:1244px){
+        flex-direction: column;
+        align-items: center;
+        row-gap: 16px;
+    }
+
+}
+.project-card {
+    width: 320px;
+    position: relative;
+    overflow: hidden;
+
+    &:hover{
+        .project-card__info{
+            transform: translateY(0);
+            transition: transform 0.5s;
+        }
+    }
+}
+
+.project-card__img img {
+    width: 320px;
+    height: 320px;
+
+}
+
+
+// shadow info
+
+
+.project-card__info {
+    padding-top: 40.5px;
+    padding-bottom: 40.5px;
+    width: 100%;
+    height: 320px;
+    background-color: rgba(33, 32, 29, 0.98);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform 0.5s;
+}
+
+.project-card__info-top {
+    width: 200px;
+    border-bottom: 1px solid #098680;
+    padding-bottom: 16px;
+    margin:0 auto ;
+}
+
+.project-card__stack {
+    font-family: 'Inconsolata';
+    font-weight: 500;
+    font-size: 16px;
+    line-height:1.06;
+    text-align: center;
+}
+.project-card__info-bottom {
+    width: 219px;
+    padding-top: 16px;
+    margin: 0 auto;
+}
+.project-card__info-discription {
+    font-family: 'Inconsolata';
+    font-weight: 400;
+    font-size: 16px;
+    line-height:1.06;
+    margin-bottom: 16px;
+}
+.project-card__action {
+    text-align: center;
+}

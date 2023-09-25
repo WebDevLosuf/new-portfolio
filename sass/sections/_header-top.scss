@@ -1,0 +1,114 @@
+.header {
+    padding-top: 20.5px;
+    padding-bottom: 20.5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    background-color: rgba(27, 26, 23, 0.699);
+    backdrop-filter: blur(5px) ;
+
+    @media (max-width:1244px){
+        padding-top:16px;
+        padding-bottom: 16px;
+    }
+
+    @media (max-width:899px){
+        .container{
+            display: none;
+        }
+        .header__mobile-menu{
+            display: flex;
+            justify-content: space-between;
+            align-items:flex-start;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .logotype {
+    z-index: 2;
+    }
+}
+
+
+
+.header *{
+    flex-shrink: 0;
+}
+
+.header__content {
+    display: flex;
+    column-gap: 525px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width:1244px){
+        flex-direction: column;
+        align-items: center;
+        row-gap:18px ;
+    }
+}
+
+
+.menu-link{
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: capitalize;
+
+&:hover{
+    color: $title-color;
+    cursor: pointer;
+
+}
+
+    @media (max-width:899px){
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+}
+
+
+.header__links {
+    display: flex;
+    column-gap: 65px;
+    @media (max-width:899px){
+        flex-direction: column;
+        row-gap: 64px;
+        align-items: center;
+    }
+    
+}
+
+// 
+// 
+// header mobile menu
+// header__mobile-list-menu, фбсолютом расположить top 0 left 0
+// background полупрозрач
+// header links/mobile menu  ВЫСТРОИТЬ В СТОЛБИК!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// 
+// 
+.header__mobile-list-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(27, 26, 23, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ;
+    &.active{
+        transform: translateY(0);
+    }
+}
+
+
+
+

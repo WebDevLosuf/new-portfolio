@@ -1,0 +1,21 @@
+.context-link{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #32312E;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 39px;
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.4s;
+}
+
+.context-link:hover{
+    background-color: #1d1c1a;
+    transition: 0.4s;
+}
+
+.context-link:active{
+    color: $title-color;
+}
