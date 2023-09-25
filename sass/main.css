@@ -214,6 +214,10 @@ body.active {
   z-index: 2;
 }
 
+.header__mobile-menu {
+  display: none;
+}
+
 .header * {
   flex-shrink: 0;
 }
@@ -880,6 +884,7 @@ body.active {
   flex-direction: column;
   justify-content: space-between;
   z-index: 5;
+  cursor: pointer;
 }
 .burger.active .burger__line--first {
   transform: translateY(10px) rotate(45deg);

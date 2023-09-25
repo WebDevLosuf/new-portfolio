@@ -24,14 +24,16 @@
             align-items:flex-start;
             padding-left: 15px;
             padding-right: 15px;
+
         }
     }
     .logotype {
     z-index: 2;
     }
 }
-
-
+.header__mobile-menu{
+display: none;
+}
 
 .header *{
     flex-shrink: 0;
@@ -50,7 +52,6 @@
         row-gap:18px ;
     }
 }
-
 
 .menu-link{
     font-family: 'Inconsolata';
@@ -72,7 +73,6 @@
 
 }
 
-
 .header__links {
     display: flex;
     column-gap: 65px;
@@ -84,14 +84,6 @@
     
 }
 
-// 
-// 
-// header mobile menu
-// header__mobile-list-menu, фбсолютом расположить top 0 left 0
-// background полупрозрач
-// header links/mobile menu  ВЫСТРОИТЬ В СТОЛБИК!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// 
-// 
 .header__mobile-list-menu{
     position: fixed;
     top: 0;

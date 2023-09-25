@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: space-between;
     z-index: 5;
+    cursor: pointer;
 
     &.active{
         .burger__line--first{
