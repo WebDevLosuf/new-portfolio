@@ -83,6 +83,30 @@ function paralax() {
         ease: 'power2.out' ,
         },);
 
+        gsap.to(
+            '.avatar__shadow--first', 
+            {
+            x: -mouseX * 0.0125, 
+            y: mouseY * 0.0125, 
+            ease: 'power2.out' ,
+            },);
+
+            gsap.to(
+                '.avatar__shadow--second', 
+                {
+                x: -mouseX * 0.015, 
+                y: mouseY * 0.015, 
+                ease: 'power2.out' ,
+                },);
+
+                gsap.to(
+                    '.avatar__wrapper-img', 
+                    {
+                    x: -mouseX * 0.02, 
+                    y: mouseY * 0.02, 
+                    ease: 'power2.out' ,
+                    },);
+
     })
 
 }
