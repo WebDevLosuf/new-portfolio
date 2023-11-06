@@ -7,17 +7,9 @@
 
 .skills-card {
     width: 200px;
-    background-color: $color-card;
-    padding-top: 61px;
-    padding-bottom: 40px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .skills-card__item{
-        transition: fill 0.5s;
-    }
-    
+    min-height: 300px;
+    position: relative;
+
 
     &:hover{
         .skills-card__item--html , .context-btn--html {
@@ -45,14 +37,75 @@
             transition:fill 0.5s ;
         }
     }
+    
+    
+    
+    .skills-card__item{
+        transition: fill 0.5s;
+    }
+    
+    .skills-card__front,
+    .skills-card__back{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform 1s;
+    }
+    
+    .skills-card__front{
+        transform: perspective(600px) rotateY(0deg);
+        background-color: $color-card;
+        padding-top: 61px;
+        padding-bottom: 40px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .skills-card__back{
+        position: absolute;
+        color: rgb(255, 255, 255);
+        background-color: rgb(34, 85, 179);
+        transform: perspective(600px) rotateY(180deg);
+    }
+
+    &.active{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotateY(0deg);
+        min-width: 500px;
+        min-height: 400px;
+        z-index: 3;
+
+        .skills-card__front{
+            transform: perspective(600px) rotateY(-180deg);
+        }
+
+        .skills-card__back{
+            transform: perspective(600px) rotateY(0deg);
+        }
+    }
+
+    .skills-card__front{
+        @media (max-width:899px){
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 13px 41px 13px 32px;
+        }
+    }
 
     @media (max-width:899px){
-        display: flex;
-        flex-direction: row;
         width:285px;
-        align-items: center;
-        padding: 13px 41px 13px 32px;
+        min-height: 60px;
     }
+
+
 }
 
 

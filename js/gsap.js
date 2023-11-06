@@ -23,8 +23,6 @@ gsap.from('.skills-card',{
         toggleActions: 'play none none reverse ',
     }
 })
-
-
 gsap.from('.project-card',{
     stagger:0.3,
     opacity:0,
