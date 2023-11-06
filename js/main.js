@@ -15,6 +15,7 @@ const btns = document.querySelectorAll(".context-btn")
 btns.forEach((button) => {
     button.addEventListener("click" , () => {
         button.closest(".skills-card").classList.add("active")
+        document.querySelector(".fade-block").classList.add("active")
     })
 })
 
@@ -22,5 +23,6 @@ const cards_cross = document.querySelectorAll(".skills-card__cross")
 cards_cross.forEach((cross) => {
     cross.addEventListener("click" , () =>{
         cross.closest(".skills-card").classList.remove("active")
+        document.querySelector(".fade-block").classList.remove("active")
     })
 })

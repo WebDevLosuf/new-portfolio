@@ -685,15 +685,23 @@ body.active {
   color: rgb(255, 255, 255);
   background-color: rgb(34, 85, 179);
   transform: perspective(600px) rotateY(180deg);
+  border-radius: 10px;
+}
+.skills-card .skills-card__cross {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
 }
 .skills-card.active {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotateY(0deg);
+  transform: translate(-50%, -50%) rotateY(0deg) !important;
   min-width: 500px;
   min-height: 400px;
-  z-index: 3;
+  z-index: 4;
 }
 .skills-card.active .skills-card__front {
   transform: perspective(600px) rotateY(-180deg);
@@ -955,4 +963,20 @@ body.active {
   width: 36px;
   height: 4px;
   background-color: #F0E3CA;
+}
+
+.fade-block {
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  background-color: rgba(73, 112, 114, 0.589);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  position: fixed;
+  top: -100%;
+  left: 0;
+  transition: top 1s;
+}
+.fade-block.active {
+  top: 0;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,16 @@
+.fade-block{
+    width: 100%;
+    height: 100vh;
+    z-index: 4;
+    background-color: rgba(73, 112, 114, 0.589);
+    backdrop-filter: blur(5px);
+    position:fixed ;
+    top:-100%;
+    left: 0;
+
+    transition: top 1s;
+
+    &.active{
+        top: 0;
+    }
+}
