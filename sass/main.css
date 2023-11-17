@@ -212,6 +212,8 @@ body.active {
 }
 .header .logotype {
   z-index: 2;
+  width: 146px;
+  height: 39px;
 }
 
 .header__mobile-menu {
@@ -635,24 +637,34 @@ body.active {
   min-height: 300px;
   position: relative;
 }
-.skills-card:hover .skills-card__item--html, .skills-card:hover .context-btn--html {
+.skills-card:hover .skills-card__item--html {
   fill: #FC490B;
+}
+.skills-card:hover .context-btn--html {
   background-color: #FC490B;
 }
-.skills-card:hover .skills-card__item--css, .skills-card:hover .context-btn--css {
+.skills-card:hover .skills-card__item--css {
   fill: #2196F4;
+}
+.skills-card:hover .context-btn--css {
   background-color: #2196F4;
 }
-.skills-card:hover .skills-card__item--js, .skills-card:hover .context-btn--js {
+.skills-card:hover .skills-card__item--js {
   fill: #ceb306;
+}
+.skills-card:hover .context-btn--js {
   background-color: #ceb306;
 }
-.skills-card:hover .skills-card__item--scss, .skills-card:hover .context-btn--scss {
+.skills-card:hover .skills-card__item--scss {
   fill: #CA669B;
+}
+.skills-card:hover .context-btn--scss {
   background-color: #CA669B;
 }
-.skills-card:hover .skills-card__item--git, .skills-card:hover .context-btn--git {
+.skills-card:hover .skills-card__item--git {
   fill: #F25234;
+}
+.skills-card:hover .context-btn--git {
   background-color: #F25234;
 }
 .skills-card:hover .skills-card__item {
@@ -660,6 +672,9 @@ body.active {
 }
 .skills-card .skills-card__item {
   transition: fill 0.5s;
+  fill: #F0E3CA;
+  width: 114px;
+  height: 128px;
 }
 .skills-card .skills-card__front,
 .skills-card .skills-card__back {
