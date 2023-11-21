@@ -670,12 +670,6 @@ body.active {
 .skills-card:hover .skills-card__item {
   transition: fill 0.5s;
 }
-.skills-card .skills-card__item {
-  transition: fill 0.5s;
-  fill: #F0E3CA;
-  width: 114px;
-  height: 128px;
-}
 .skills-card .skills-card__front,
 .skills-card .skills-card__back {
   width: 100%;
@@ -737,6 +731,17 @@ body.active {
     width: 285px;
     min-height: 60px;
   }
+}
+
+.skills-card__item {
+  transition: fill 0.5s;
+  fill: #F0E3CA;
+  max-width: 114px;
+  max-height: 128px;
+}
+
+.skills-card__item:nth-child(3) {
+  max-width: 128px !important;
 }
 
 .skills-card__icon {
