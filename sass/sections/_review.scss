@@ -1,0 +1,132 @@
+.reviews {
+}
+
+.slick-list{
+    overflow: hidden;
+}
+
+.slick-track{
+    display: flex;
+}
+
+.container {
+}
+
+.slider__content {
+}
+
+.wrapper-section-title {
+}
+
+.context-title {
+}
+
+.slider {
+    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
+    position: relative;
+}
+
+.slider__arrow{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 40px;
+height: 40px;
+cursor: pointer;
+
+& path{
+    transition: fill 0.5s;
+}
+
+&:hover path {
+fill: $title-color;
+}
+
+&--left{
+    left: -35px; 
+    transform: rotate(180deg);
+}
+
+&--right{
+    right: -35px;
+}
+}
+
+
+.slick-dots{
+    position: absolute;
+    display: flex;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    column-gap: 10px;
+
+    & button{
+        font-size: 0;
+        line-height: 0;
+        background-color: $text-color;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.5s , transform 0.5s ;
+    }
+
+    .slick-active button{
+        background-color:$title-color ;
+        transform: scale(1.2);
+    }
+}
+
+
+
+.slide {
+    background-color:$color-card;
+    margin: 0 20px;
+    border-radius: 20px;
+    padding: 10px 0 30px;
+}
+
+.slide__top {
+    margin-bottom: 10px;
+}
+
+.slide__avatar {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+
+    
+}
+.slide__item , .slide__photo {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    
+}
+
+.slide__photo{
+    border-radius: 36% 64% 54% 46% / 57% 29% 71% 43% ;
+    overflow: hidden;
+    width: 55%;
+}
+
+.slide__name {
+}
+
+.slide__bottom {
+}
+
+.slide__review {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Inconsolata';
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1.1;
+    justify-content: center;
+}
