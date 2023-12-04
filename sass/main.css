@@ -468,6 +468,11 @@ body.active {
   line-height: 1.05;
 }
 
+.reviews {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 .slick-list {
   overflow: hidden;
 }
@@ -503,6 +508,11 @@ body.active {
 }
 .slider__arrow--right {
   right: -35px;
+}
+@media (max-width: 899px) {
+  .slider__arrow {
+    visibility: hidden;
+  }
 }
 
 .slick-dots {

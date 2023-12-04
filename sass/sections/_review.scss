@@ -1,4 +1,6 @@
 .reviews {
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
 .slick-list{
@@ -51,6 +53,11 @@ fill: $title-color;
 
 &--right{
     right: -35px;
+}
+
+@media (max-width:899px){
+    // display: none;
+    visibility: hidden;
 }
 }
 
