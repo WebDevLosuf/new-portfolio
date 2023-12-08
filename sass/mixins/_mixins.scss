@@ -1,0 +1,12 @@
+@mixin hoverForm($color){
+    &:hover{
+        box-shadow: 0 0 5px  $color , inset 0 0 5px  $color ;
+        transition: box-shadow 0.5s;
+    }
+}
+
+@mixin formFocus($color){
+    &:focus{
+        box-shadow: 0 0 5px  $color , inset 0 0 5px $color;
+    }
+}
