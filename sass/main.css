@@ -624,6 +624,22 @@ body.active {
   padding-bottom: 20px;
   line-height: 1.3;
 }
+.form__input--message::-webkit-scrollbar {
+  width: 12px;
+}
+.form__input--message::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+.form__input--message::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px rgba(13, 185, 194, 0.368627451);
+}
+
+.form__item--messege {
+  max-height: 250px;
+  overflow: hidden;
+  border-radius: 20px;
+}
 
 .main-title {
   color: #0DB8C2;
