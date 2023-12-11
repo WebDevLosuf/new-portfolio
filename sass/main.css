@@ -596,6 +596,7 @@ body.active {
 .form__item {
   width: 100%;
   max-width: 400px;
+  position: relative;
 }
 
 .form__input {
@@ -625,6 +626,13 @@ body.active {
   box-shadow: 0 0 5px rgba(0, 242, 255, 0.6117647059), inset 0 0 5px rgba(0, 242, 255, 0.6117647059);
 }
 
+.form__fake-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .form__input-message {
   width: 97%;
   margin: 0 auto;
@@ -639,6 +647,7 @@ body.active {
   background-color: transparent;
   display: inline-block;
   font-family: "Inconsolata";
+  color: #0DB8C2;
   font-weight: 700;
   font-size: 24px;
   line-height: 50px;
@@ -667,6 +676,9 @@ body.active {
   box-shadow: 0 0 5px rgba(13, 185, 194, 0.368627451), inset 0 0 5px rgba(13, 185, 194, 0.368627451);
   transition: box-shadow 0.5s;
   cursor: pointer;
+}
+.form__item--messege .form__fake-placeholder {
+  top: 10%;
 }
 
 .input__button {
