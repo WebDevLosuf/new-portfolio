@@ -92,5 +92,6 @@
     padding-left: 80px;
     text-align: center;
     @include hoverForm($border-color);
+    @include  buttonActive;
 }
 

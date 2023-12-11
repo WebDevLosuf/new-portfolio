@@ -2,11 +2,19 @@
     &:hover{
         box-shadow: 0 0 5px  $color , inset 0 0 5px  $color ;
         transition: box-shadow 0.5s;
+        cursor: pointer;
     }
 }
 
 @mixin formFocus($color){
     &:focus{
         box-shadow: 0 0 5px  $color , inset 0 0 5px $color;
+    }
+}
+
+@mixin buttonActive{
+    &:active{
+        box-shadow: 0 0 5px  , inset 0 0 10px 3px;
+        transform: scale(0.9);
     }
 }

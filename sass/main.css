@@ -620,6 +620,7 @@ body.active {
 .form__input:hover {
   box-shadow: 0 0 5px rgba(13, 185, 194, 0.368627451), inset 0 0 5px rgba(13, 185, 194, 0.368627451);
   transition: box-shadow 0.5s;
+  cursor: pointer;
 }
 .form__input:focus {
   box-shadow: 0 0 5px rgba(0, 242, 255, 0.6117647059), inset 0 0 5px rgba(0, 242, 255, 0.6117647059);
@@ -652,6 +653,7 @@ body.active {
 .form__item--messege:hover {
   box-shadow: 0 0 5px rgba(13, 185, 194, 0.368627451), inset 0 0 5px rgba(13, 185, 194, 0.368627451);
   transition: box-shadow 0.5s;
+  cursor: pointer;
 }
 
 .input__button {
@@ -673,6 +675,11 @@ body.active {
 .input__button:hover {
   box-shadow: 0 0 5px rgba(13, 185, 194, 0.368627451), inset 0 0 5px rgba(13, 185, 194, 0.368627451);
   transition: box-shadow 0.5s;
+  cursor: pointer;
+}
+.input__button:active {
+  box-shadow: 0 0 5px, inset 0 0 10px 3px;
+  transform: scale(0.9);
 }
 
 .main-title {
