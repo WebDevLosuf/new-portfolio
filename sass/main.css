@@ -631,6 +631,7 @@ body.active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: transform 0.5s;
 }
 .form__fake-placeholder.active {
   transform: translate(-50%, -37px);
