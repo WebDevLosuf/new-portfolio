@@ -632,6 +632,9 @@ body.active {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.form__fake-placeholder.active {
+  transform: translate(-50%, -37px);
+}
 
 .form__input-message {
   width: 97%;
