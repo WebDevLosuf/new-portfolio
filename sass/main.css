@@ -711,6 +711,10 @@ body.active {
   transform: scale(0.9);
 }
 
+.answer {
+  text-align: center;
+}
+
 .main-title {
   color: #0DB8C2;
   font-family: "Inconsolata";
