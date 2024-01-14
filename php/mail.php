@@ -45,10 +45,10 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 mail($admin_email, $form_subject, $message, $headers, $email_from);
 
 
-
 echo 
 "<div class='success'>
 		<h2>Sent!<br>
 		We will contact you soon!
 		</h2>
 	</div> ";
+
