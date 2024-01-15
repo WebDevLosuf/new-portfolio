@@ -16,14 +16,14 @@ $(function () {
         },
         messages: {
             name: {
-                required: 'Поле не может быть пустым'
+                required: 'The field cannot be empty'
             },
             tel: {
-                required: 'Введите телефон',
+                required: 'Enter your phone number',
                 
             },
             message: {
-                required: 'Поле не может быть пустым'
+                required: 'The field cannot be empty'
             }
         },
         submitHandler: ajaxFormSubmit
