@@ -1,24 +1,9 @@
-.social-links-list{
-    width: 384px;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 48px ;
-    row-gap:32px ;
-
-    @media (max-width:899px){
-        width:100%;
-        flex-direction: column;
-
-
-        .social-link:nth-child(2) , .social-link:nth-child(4){
-            order: 1;
-        }
-    }
+.social-links-list__item:not(:last-child) {
+    margin-bottom: 32px;
 }
 
 
-
-.social-links-list a:hover{
+.social-links-list a:hover {
     color: #075c61;
     transition: 0.5s;
     cursor: pointer;
@@ -36,20 +21,15 @@
     vertical-align: middle;
 }
 
-.social-link:first-child:before{
+.social-links-list__item:first-child .social-link:before {
     background-image: url("..//../image/footer/mail.svg");
 }
-.social-link:nth-child(2):before{
-    background-image: url("..//../image/footer/github.svg");
-}
-.social-link:nth-child(3):before{
+
+.social-links-list__item:nth-child(2) .social-link:before {
     background-image: url("..//../image/footer/vk.svg");
 }
-.social-link:last-child:before{
-    background-image: url("..//../image/footer/figma.svg");
-}
 
-.social-link{
+.social-link {
     font-family: 'Inconsolata';
     font-weight: 700;
     font-size: 24px;
@@ -57,9 +37,4 @@
     color: $title-color;
     transition: 0.5s;
 
-    &:nth-child(3){
-        min-width: 204px ;
-    }
 }
-
-

@@ -1171,22 +1171,8 @@ body.active {
   color: #0DB8C2;
 }
 
-.social-links-list {
-  width: 384px;
-  display: flex;
-  flex-wrap: wrap;
-  -moz-column-gap: 48px;
-       column-gap: 48px;
-  row-gap: 32px;
-}
-@media (max-width: 899px) {
-  .social-links-list {
-    width: 100%;
-    flex-direction: column;
-  }
-  .social-links-list .social-link:nth-child(2), .social-links-list .social-link:nth-child(4) {
-    order: 1;
-  }
+.social-links-list__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .social-links-list a:hover {
@@ -1205,20 +1191,12 @@ body.active {
   vertical-align: middle;
 }
 
-.social-link:first-child:before {
+.social-links-list__item:first-child .social-link:before {
   background-image: url("..//../image/footer/mail.svg");
 }
 
-.social-link:nth-child(2):before {
-  background-image: url("..//../image/footer/github.svg");
-}
-
-.social-link:nth-child(3):before {
+.social-links-list__item:nth-child(2) .social-link:before {
   background-image: url("..//../image/footer/vk.svg");
-}
-
-.social-link:last-child:before {
-  background-image: url("..//../image/footer/figma.svg");
 }
 
 .social-link {
@@ -1228,9 +1206,6 @@ body.active {
   line-height: 1.04;
   color: #0DB8C2;
   transition: 0.5s;
-}
-.social-link:nth-child(3) {
-  min-width: 204px;
 }
 
 .burger {
