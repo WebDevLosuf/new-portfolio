@@ -6,7 +6,7 @@ $c = true;
 // For POST method only!
 
 $project_name = "http://pivnenko-anton.pro";
-$admin_email = "pivnenkowebdev@gmail.com";
+$admin_email = "zettabyte461@gmail.com";
 $email_from = "pivnenkowebdev@pivnenko-anton.pro";
 $message = "";
 
