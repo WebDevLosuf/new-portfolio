@@ -26,3 +26,12 @@ cards_cross.forEach((cross) => {
         document.querySelector(".fade-block").classList.remove("active")
     })
 })
+
+document.addEventListener("keyup" , (e) => {
+    let openCard = document.querySelector(".skills-card.active")
+    if(e.key === "Escape")  {
+        openCard.classList.remove("active");
+        document.querySelector(".fade-block").classList.remove("active")
+    }
+    
+})
