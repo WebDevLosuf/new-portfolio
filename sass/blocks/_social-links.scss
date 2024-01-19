@@ -2,14 +2,6 @@
     margin-bottom: 32px;
 }
 
-
-.social-links-list a:hover {
-    color: #075c61;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-
 .social-link::before {
 
     content: "";
@@ -36,5 +28,16 @@
     line-height: 1.04;
     color: $title-color;
     transition: 0.5s;
+    
 
+    &:visited {
+        color: $title-color;
+        cursor: pointer;
+    }
+
+    &:hover {
+        color: #075c61;
+        transition: 0.5s;
+        cursor: pointer;
+    }
 }

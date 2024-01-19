@@ -1175,12 +1175,6 @@ body.active {
   margin-bottom: 32px;
 }
 
-.social-links-list a:hover {
-  color: #075c61;
-  transition: 0.5s;
-  cursor: pointer;
-}
-
 .social-link::before {
   content: "";
   display: inline-block;
@@ -1206,6 +1200,15 @@ body.active {
   line-height: 1.04;
   color: #0DB8C2;
   transition: 0.5s;
+}
+.social-link:visited {
+  color: #0DB8C2;
+  cursor: pointer;
+}
+.social-link:hover {
+  color: #075c61;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .burger {
