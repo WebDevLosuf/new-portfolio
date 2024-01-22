@@ -39,37 +39,12 @@ html {
     
     /* Grid styles */
     
-    .container {
-    max-width: 1245px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    
-    &--fluid {
-    max-width: unset;
-    }
-    
-    &--no-padding {
-    padding: 0;
-    }
-    
-    /* Tablet */
-    @media (max-width: 1244px) {
-    width: 900px;
-    }
-    
-     /* Mobile */
-    @media (max-width: 899px) {
-    width: 413px;
-    }
     
     // /* Mobile XS */
     // @media (max-width: 767px) {
     // width: 320px;
     // }
-    }
+    
     
     /* Utility */
     
