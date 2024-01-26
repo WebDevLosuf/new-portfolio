@@ -14,6 +14,10 @@
         padding-bottom: 16px;
     }
 
+    .header__mobile-menu{
+    display: none;
+    }
+
     @media (max-width:530px){
         .container{
             display: none;
@@ -32,9 +36,6 @@
     width: 146px;
     height: 39px;
     }
-}
-.header__mobile-menu{
-display: none;
 }
 
 .header *{
@@ -88,9 +89,9 @@ display: none;
 
 .header__mobile-list-menu{
     position: fixed;
-    top: -120%;
+    top: 0;
     left: 0;
-    transform: translateY(-120%);
+    transform: translateY(-100%);
     width: 100%;
     height: 100vh;
     background-color: rgba(27, 26, 23, 0.9);
