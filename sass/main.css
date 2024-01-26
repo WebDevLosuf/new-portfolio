@@ -326,6 +326,12 @@ body.active {
     height: 430px;
   }
 }
+@media (max-width: 530px) {
+  .preview__avatar {
+    width: 80%;
+    height: auto;
+  }
+}
 
 .about-me {
   padding-top: 64px;
@@ -840,6 +846,12 @@ body.active {
     height: 286px;
   }
 }
+@media (max-width: 530px) {
+  .avatar__wrapper-img {
+    width: 160px;
+    height: 220px;
+  }
+}
 
 .avatar__shadow {
   width: 374px;
@@ -854,6 +866,12 @@ body.active {
   .avatar__shadow {
     width: 200px;
     height: 286px;
+  }
+}
+@media (max-width: 530px) {
+  .avatar__shadow {
+    width: 200px;
+    height: 200px;
   }
 }
 

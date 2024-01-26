@@ -41,5 +41,9 @@ padding-bottom: 128px;
         width: 413px;
         height: 430px;
     }
-    
+
+    @media (max-width:530px){
+        width: 80%;
+        height: auto;
+    }
 }

@@ -17,6 +17,11 @@
         height:286px ;
     }
 
+    @media (max-width:530px){
+        width: 160px;
+        height:220px ;
+    }
+
 }
 .avatar__shadow {
     width: 374px;
@@ -30,6 +35,11 @@
     @media (max-width:899px){
         width:200px ;
         height:286px ;
+    }
+
+        @media (max-width:530px){
+        width: 200px;
+        height:200px ;
     }
     
 }
