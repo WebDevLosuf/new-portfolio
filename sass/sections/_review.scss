@@ -56,8 +56,8 @@ fill: $title-color;
 }
 
 @media (max-width:899px){
-    // display: none;
-    visibility: hidden;
+    display: none !important;
+    
 }
 }
 

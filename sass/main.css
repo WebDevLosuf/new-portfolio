@@ -509,7 +509,7 @@ body.active {
 }
 @media (max-width: 899px) {
   .slider__arrow {
-    visibility: hidden;
+    display: none !important;
   }
 }
 
