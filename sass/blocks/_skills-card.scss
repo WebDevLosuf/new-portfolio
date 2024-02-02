@@ -63,6 +63,7 @@
     .skills-card__front,
     .skills-card__back {
         width: 100%;
+        // проверить
         height: 100%;
         overflow: hidden;
         backface-visibility: hidden;
@@ -86,7 +87,7 @@
         color: $text-color;
         background-color: #242320de;
         backdrop-filter: blur(5px);
-        transform: perspective(600px) rotateY(180deg);
+        transform: perspective(600px) rotateY(-180deg);
         border-radius: 10px;
     }
 
@@ -129,15 +130,12 @@
         z-index: 4;
 
         .skills-card__front {
-            transform: perspective(600px) rotateY(-180deg);
+            transform: perspective(600px) rotateY(180deg);
         }
 
         .skills-card__back {
             transform: perspective(600px) rotateY(0deg);
         }
-        // @media (max-width: 520px){
-        //     min-width: 90%;
-        // }
     }
 
     .skills-card__front {
