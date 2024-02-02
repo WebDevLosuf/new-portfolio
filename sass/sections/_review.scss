@@ -105,9 +105,8 @@ fill: $title-color;
     height: 100px;
     position: relative;
     margin: 0 auto;
-
-    
 }
+
 .slide__item , .slide__photo {
     position:absolute;
     top: 50%;
@@ -120,6 +119,11 @@ fill: $title-color;
     border-radius: 36% 64% 54% 46% / 57% 29% 71% 43% ;
     overflow: hidden;
     width: 55%;
+    height: 55%;
+
+    img{
+        width: 100%;
+    }
 }
 
 .slide__name {

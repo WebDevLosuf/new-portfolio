@@ -568,6 +568,10 @@ body.active {
   border-radius: 36% 64% 54% 46%/57% 29% 71% 43%;
   overflow: hidden;
   width: 55%;
+  height: 55%;
+}
+.slide__photo img {
+  width: 100%;
 }
 
 .slide__review {
