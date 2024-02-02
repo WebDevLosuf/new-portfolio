@@ -421,6 +421,9 @@ body.active {
   padding-top: 64px;
   padding-bottom: 64px;
 }
+.footer .container {
+  overflow: hidden;
+}
 
 .footer__content {
   display: flex;
@@ -983,7 +986,8 @@ body.active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotateY(0deg) !important;
-  min-width: 500px;
+  max-width: 500px;
+  width: 90%;
   min-height: 400px;
   z-index: 4;
 }
@@ -992,11 +996,6 @@ body.active {
 }
 .skills-card.active .skills-card__back {
   transform: perspective(600px) rotateY(0deg);
-}
-@media (max-width: 520px) {
-  .skills-card.active {
-    min-width: 90%;
-  }
 }
 @media (max-width: 899px) {
   .skills-card .skills-card__front {
