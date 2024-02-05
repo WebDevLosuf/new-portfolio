@@ -9,7 +9,7 @@
     width: 200px;
     min-height: 300px;
     position: relative;
-
+    transition: width 0.5s min-height 0.5s;
     
 
     &:hover {
@@ -66,9 +66,9 @@
         // проверить
         height: 100%;
         overflow: hidden;
-        backface-visibility: hidden;
         position: absolute;
         transition: transform 1s;
+        backface-visibility: hidden;
     }
 
     .skills-card__front {
@@ -80,6 +80,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        backface-visibility: hidden;
     }
 
     .skills-card__back {
@@ -89,6 +90,7 @@
         backdrop-filter: blur(5px);
         transform: perspective(600px) rotateY(-180deg);
         border-radius: 10px;
+        backface-visibility: hidden;
     }
 
     .skills-card__discription{
@@ -131,10 +133,12 @@
 
         .skills-card__front {
             transform: perspective(600px) rotateY(180deg);
+            backface-visibility: hidden;
         }
 
         .skills-card__back {
             transform: perspective(600px) rotateY(0deg);
+            backface-visibility: hidden;
         }
     }
 
