@@ -291,8 +291,8 @@ body.active {
 }
 @media (max-width: 899px) {
   .preview {
-    padding-top: 213px;
-    padding-bottom: 142px;
+    padding-top: 140px;
+    padding-bottom: 15px;
   }
 }
 
@@ -582,6 +582,11 @@ body.active {
   font-size: 23px;
   line-height: 1.1;
   justify-content: center;
+}
+
+.contact-form {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .form {
