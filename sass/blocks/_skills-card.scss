@@ -81,6 +81,7 @@
         flex-direction: column;
         align-items: center;
         backface-visibility: hidden;
+        z-index: 2;
     }
 
     .skills-card__back {
