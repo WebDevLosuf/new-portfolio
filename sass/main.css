@@ -1260,7 +1260,7 @@ body.active {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   position: fixed;
-  top: -100%;
+  top: -130%;
   left: 0;
   transition: top 1s;
 }
